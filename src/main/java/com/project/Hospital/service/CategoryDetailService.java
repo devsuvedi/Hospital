@@ -22,5 +22,17 @@ public CategoryDetail save(CategoryDetail cd)
 {
 	return categorydetail.save(cd);
 }
+public List<CategoryDetail> findByFirstNameLetter(){
+	return categorydetail.findByFirstLetter();
+}
+public int countByName(){
+	return categorydetail.countByName();
+}
+public int countByAddress(String address) {
+	return categorydetail.countByAddress(address);
+}
+public List<CategoryDetail> findByAddress(String address){
+	return categorydetail.findByAddress(address);
+}
 
 }
